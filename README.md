@@ -4,8 +4,8 @@
   <img src="docs/images/upstream/CRC_STAD_NC_MultiOmics_Graphical_Abstract.svg" alt="CRC-STAD-NC Multi-Omics Workflow" width="100%">
 </p>
 
-
-A production-grade Nextflow DSL2 pipeline reproducing the computational analyses from [Tao et al. 2023 (*Cell Reports Medicine* 4:101281)](https://doi.org/10.1016/j.xcrm.2023.101281) across four public cell-free omics layers in colorectal cancer (CRC), gastric cancer (STAD), and healthy donors.
+An automated, HPC-ready Nextflow DSL2 workflow designed for high-throughput, multi-modal liquid biopsy deconvolution. Serving as a scalable, transparent reproduction of 
+Tao et al. (2023, Cell Reports Medicine), the pipeline orchestrates raw read preprocessing, layer-specific alignment (Bowtie2 & STAR), deduplication, fragment-length distributions, synthetic ERCC/ribosomal RNA accounting, and unique molecular identifier (UMI) deduplication across four distinct plasma cell-free sequencing modalities (86 cfWGS, 98 cfMeDIP, 127 total cfRNA, and 49 small cfRNA libraries) in gastrointestinal malignancies and healthy donors.
 
 ---
 ## Research Team
@@ -274,12 +274,29 @@ The case study uses cell-free multi-omics sequencing data associated with Tao et
 
 ---
 
-## Team
+## Contributors and Affiliation
 
-**Noura Khaled** — Pipeline development and presentation  
-**HOMiCS Bioinformatics Hub** — Horizon Science Communication LLC  
-PI: **Hesham M. Abdullah, Ph.D.**
+This project was conducted by **Dr. Hesham Abdullah** and **Noura Khaled**, and is affiliated with **Horizon Science Communication LLC**.
 
+**Dr. Hesham Abdullah**
+- Email: `ceo@horizon-sci-comm.us`
+- GitHub: [@HABIOTECH](https://github.com/HABIOTECH)
+- LinkedIn: [Dr. Hesham Abdullah](https://www.linkedin.com/in/hesham-abdullah-40bab1190/)
+
+**Noura Khaled**
+- Email: `nourakhaledhussien@gmail.com`
+- GitHub: [@nourakhaledhussien-code](https://github.com/nourakhaledhussien-code)
+- LinkedIn: [Noura Khaled](https://www.linkedin.com/in/noura-khaled-211517234/)
+
+---
+
+### Organization
+
+**Horizon Science Communication LLC**
+
+<img width="1448" height="1086" alt="Horizon Science Communication LLC" src="https://github.com/user-attachments/assets/eff03aac-180b-46c2-baac-8433ebdafdad" />
+
+🌐 [Website](https://www.horizon-sci-comm.us/)
 ---
 
 
