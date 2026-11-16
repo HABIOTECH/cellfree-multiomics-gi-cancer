@@ -1,5 +1,10 @@
 # Cell-Free Multi-Omics Analysis in Gastrointestinal Cancer
 
+<p align="center">
+  <img src="docs/images/upstream/CRC_STAD_NC_MultiOmics_Graphical_Abstract.svg" alt="CRC-STAD-NC Multi-Omics Workflow" width="100%">
+</p>
+
+
 **HOMiCS Bioinformatics Hub · Horizon Science Communication LLC**
 
 A production-grade Nextflow DSL2 pipeline reproducing the computational analyses from [Tao et al. 2023 (*Cell Reports Medicine* 4:101281)](https://doi.org/10.1016/j.xcrm.2023.101281) across four public cell-free omics layers in colorectal cancer (CRC), gastric cancer (STAD), and healthy donors.
