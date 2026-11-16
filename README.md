@@ -250,12 +250,27 @@ nextflow run main.nf -c nextflow.config -profile cluster -resume \
 This pipeline was developed with AI assistance (Claude Code) for literature review, Nextflow script drafting, SLURM log interpretation, and workflow debugging. All scientific decisions, HPC execution, output verification, and QC interpretation were performed by the researcher. AI did not run the pipeline or validate results independently.
 
 ---
+## Dataset
 
-## Citation
+The case study uses cell-free multi-omics sequencing data associated with Tao et al. (2023), comprising **360 biological libraries** across four distinct liquid biopsy layers:
 
-If you use this pipeline or its outputs, please cite the original study:
+| Layer | Assay / Platform | Samples ($N$) | BioProject | SRA Study | GEO Sample Range |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **cfDNA** | Whole-genome sequencing (HiSeq X Ten, PE 150) | 86 | [PRJNA774626](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA774626) | [SRP343169](https://trace.ncbi.nlm.nih.gov/Traces/?view=study&acc=SRP343169) | GSM5655902 – GSM5655987 |
+| **cfMeDIP** | Methylated DNA immunoprecipitation (HiSeq X Ten, PE 150) | 98 | [PRJNA774625](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA774625) | [SRP343170](https://trace.ncbi.nlm.nih.gov/Traces/?view=study&acc=SRP343170) | GSM5656000 – GSM5656097 |
+| **total cfRNA** | Total RNA-seq + ERCC spike-in (HiSeq X Ten, PE 150) | 127 | [PRJNA774661](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA774661) | [SRP343186](https://trace.ncbi.nlm.nih.gov/Traces/?view=study&acc=SRP343186) | GSM5656685 – GSM5656829 |
+| **small cfRNA** | QIAseq miRNA + 12-nt UMI (HiSeq X Ten, SE 75) | 49 | [PRJNA774739](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA774739) | [SRP343188](https://trace.ncbi.nlm.nih.gov/Traces/?view=study&acc=SRP343188) | GSM5657238 – GSM5657286 |
+| **Total** | **Multi-layer cell-free profile** | **360** | — | — | — |
 
-> Tao Y et al. Cell-free multi-omics analysis reveals potential biomarkers in gastrointestinal cancer patients' blood. *Cell Reports Medicine* 2023;4:101281.
+### Cohort Clinical Breakdown
+
+- **Colorectal Cancer (CRC):** 115 samples
+- **Gastric Cancer (STAD):** 119 samples
+- **Non-Cancer Healthy Controls (NC):** 126 samples
+
+## Reference
+
+> Tao Y, Xing S, Zuo S, et al. **Cell-free multi-omics analysis reveals potential biomarkers in gastrointestinal cancer patients' blood.** *Cell Reports Medicine* 2023;4(11):101281. DOI: [10.1016/j.xcrm.2023.101281](https://doi.org/10.1016/j.xcrm.2023.101281)
 
 ---
 
@@ -267,9 +282,7 @@ PI: **Hesham M. Abdullah, Ph.D.**
 
 ---
 
-## Reference
 
-> Tao Y, Xing S, Zuo S, et al. **Cell-free multi-omics analysis reveals potential biomarkers in gastrointestinal cancer patients' blood.** *Cell Reports Medicine* 2023;4:101281. DOI: [10.1016/j.xcrm.2023.101281](https://doi.org/10.1016/j.xcrm.2023.101281)
 
 ## License
 
