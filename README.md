@@ -91,7 +91,19 @@ Supporting modules: `main_downstream.nf` · `main_spikein.nf` · `main_smallrna.
 
 ## Planned Downstream
 
-Multi-omics integration across cfWGS (CNV features), cfMeDIP-seq (differential methylation), and total cfRNA-seq (differential expression) using **ActivePathways** followed by network visualization in **Cytoscape**. Small cfRNA/miRNA is analyzed separately and is not part of the ActivePathways integration.
+Downstream analysis will involve feature extraction, statistical analysis, and feature selection within each omics layer to identify informative molecular features.
+
+cfWGS: Characterization and selection of CNV features, alongside complementary fragmentomic analyses.
+
+cfMeDIP-seq: Identification and selection of informative DNA methylation features.
+
+Total cfRNA-seq: Differential gene-expression analysis and selection of informative transcriptomic features.
+
+Small cfRNA-seq: Characterization and selection of miRNA features, analyzed as a separate branch.
+
+Selected CNV, methylation, and gene-expression features will then be integrated using ActivePathways to investigate cross-omics relationships and enriched biological pathways, followed by network visualization in Cytoscape.
+
+Small cfRNA/miRNA and complementary fragmentomic analyses will remain separate from the core ActivePathways integration.
 
 ---
 
