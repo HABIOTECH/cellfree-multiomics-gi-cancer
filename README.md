@@ -279,7 +279,7 @@ The case study uses cell-free multi-omics sequencing data associated with Tao et
 This project was conducted by **Dr. Hesham Abdullah** and **Noura Khaled**, and is affiliated with **Horizon Science Communication LLC**.
 
 **Dr. Hesham Abdullah**
-- Email: `ceo@horizon-sci-comm.us`
+- Email: `ceo@horizon-sci-comm.us and horizonsc.us@gmail.com`
 - GitHub: [@HABIOTECH](https://github.com/HABIOTECH)
 - LinkedIn: [Dr. Hesham Abdullah](https://www.linkedin.com/in/hesham-abdullah-40bab1190/)
 
