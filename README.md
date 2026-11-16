@@ -157,23 +157,7 @@ Picard metrics showing duplicate-read statistics and insert-size distributions a
 
 ![Picard Insert Size Percentages](results/bam_processing_qc/Picard_Insert%20Size_Percentages.jpeg)
 
-#### 3. Samtools Flagstat
-
-Read-level alignment summaries, including mapped and unmapped read counts and their percentages.
-
-![Flagstat Read Counts](results/bam_processing_qc/Samtools_flagstat_read%20_count.jpeg)
-
-![Flagstat Percentage of Total](results/bam_processing_qc/Samtools_flagstst_percent%20_of%20_total.jpeg)
-
-#### 4. Samtools Idxstats
-
-Reference-contig-level mapping summaries, including mapped reads per contig and observed-versus-expected read counts.
-
-![Mapped Reads per Contig](results/bam_processing_qc/Samtools_idxstats_Mapped%20read%20per%20contig.jpeg)
-
-![Observed over Expected Counts](results/bam_processing_qc/Samtools_idxstats_Observed%20over%20Expected%20Counts.jpeg)
-
-#### 5. Samtools Stats
+#### 3. Samtools Stats
 
 Additional alignment metrics, alignment score statistics, and insert-size distribution summaries obtained from Samtools.
 
@@ -184,6 +168,22 @@ Additional alignment metrics, alignment score statistics, and insert-size distri
 ![Alignment Score Statistics](results/bam_processing_qc/Samtools_Stats_Alignment%20_Score.jpeg)
 
 ![Insert Size Distribution](results/bam_processing_qc/Samtools_Stats_Insert%20_size%20_distribution.jpeg)
+
+#### 4. Samtools Flagstat
+
+Read-level alignment summaries, including mapped and unmapped read counts and their percentages.
+
+![Flagstat Read Counts](results/bam_processing_qc/Samtools_flagstat_read%20_count.jpeg)
+
+![Flagstat Percentage of Total](results/bam_processing_qc/Samtools_flagstst_percent%20_of%20_total.jpeg)
+
+#### 5. Samtools Idxstats
+
+Reference-contig-level mapping summaries, including mapped reads per contig and observed-versus-expected read counts.
+
+![Mapped Reads per Contig](results/bam_processing_qc/Samtools_idxstats_Mapped%20read%20per%20contig.jpeg)
+
+![Observed over Expected Counts](results/bam_processing_qc/Samtools_idxstats_Observed%20over%20Expected%20Counts.jpeg)
 
 #### 6. featureCounts – Gene-Level Quantification
 
