@@ -112,6 +112,12 @@ Supporting modules: `main_downstream.nf` · `main_spikein.nf` · `main_smallrna.
 
 ---
 
+## Results Showcase
+
+Selected outputs from pipeline execution, quality control, and omics-level analyses.
+
+---
+
 ## Planned Downstream
 
 Downstream analysis will involve feature extraction, statistical analysis, and feature selection within each omics layer to identify informative molecular features.
