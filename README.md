@@ -55,7 +55,7 @@ Combining these complementary features may reveal cross-omics relationships and 
 
 ## Study Questions
 
-- Can liquid biopsy-derived molecular features support the early detection of CRC, particularly at stages I–II?
+- Can liquid biopsy-derived molecular features support the early detection of CRC, particularly at stages I–II, compared with healthy donors?
 - Which molecular features distinguish CRC and STAD from healthy donors, and which are cancer-type-specific?
 - How are genomic, epigenetic, and transcriptomic alterations related across the three core omics layers?
 - Which biological pathways and molecular signatures emerge from multi-omics integration?
