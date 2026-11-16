@@ -89,7 +89,25 @@ Combining these complementary features may reveal cross-omics relationships and 
 | **Small cfRNA-seq** | Small RNA / miRNA profiling (QIAseq, UMI-based) | 49 | [PRJNA774739](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA774739) |
 
 ---
+### Nextflow workflow automation
 
+Processing multi-layer liquid biopsy data involves coordinated quality control, layer-specific adapter trimming, aligner optimization, contaminant deconvolution, and downstream quantification across 360 paired-end libraries. Nextflow (DSL2) organizes these tasks into a modular, reproducible workflow with strict process dependencies and resource management.
+
+In this project, Nextflow supports:
+
+- **Multi-omics orchestration:** coordinates raw read pre-processing, QC, genome alignment, contaminant profiling, and feature quantification across four distinct circulating layers:
+  - **cfWGS / cfDNA (86 samples):** FastQC, Trim Galore (`AGATCGGAAGAGC`), Bowtie2 (end-to-end), Picard MarkDuplicates, and Picard InsertSizeMetrics (fragmentomics).
+  - **cfMeDIP-seq (98 samples):** fastp (poly-G trimming/Q20 correction), Bowtie2 against unconverted GRCh38, Phage Lambda screen, and subread featureCounts across 10.3M 300-bp genomic windows.
+  - **Total cfRNA-seq (127 samples):** Cutadapt (`-m 20`), STAR alignment with BAM sorting memory optimization (`--limitBAMsortRAM 30GB`), featureCounts against protein-coding/lncRNA genes, and a parallel Bowtie2 mini-spikein panel for ERCC and rRNA quantification.
+  - **Small cfRNA-seq (49 samples):** custom streaming QIAseq 3′ adapter clipping (`AACTGTAGGCACCATCAAT`), 12-nt random UMI extraction, Bowtie2 alignment to miRBase mature microRNAs, and PCR deduplication.
+- **Large-scale multi-sample processing:** processes 360 high-depth 2×150 bp paired-end plasma libraries across Colorectal Cancer (CRC, n=115), Stomach Adenocarcinoma (STAD, n=119), and Healthy Donors (HD/NC, n=126).
+- **Spike-in & contaminant deconvolution:** isolates in-silico ERCC control dynamics (~2.7% mean) and per-sample rRNA depletion variation (0.2%–52.6%) to supply technical covariates for downstream differential expression (DESeq2 / RUVg).
+- **HPC cluster execution:** distributed execution across heterogeneous compute nodes managed via SLURM (`sbatch` / job arrays) with optimized CPU, memory, and wall-time allocations.
+- **Fault-tolerant resume & caching:** leverages Nextflow’s content-addressable cache (`-resume`) to recover from task interruptions, retry failed jobs with dynamic resources, and prevent re-computation of verified upstream alignments.
+
+Tool dependencies are provisioned via environment modules (Lmod) for core aligners (`star/2.7.3a`, `bowtie2/2.2.7`, `samtools/1.21`, `subread/2.0.5`, `gatk/4.2.6.1`, `bedtools/2.27.1`) alongside dedicated Conda environments for `trimgalore`, `multiqc_env`, `blast_env`, and R statistical packages (`rnaseq_r`, `DESeq2`, `edgeR`, `MEDIPS`).
+
+---
 ## Pipeline Architecture
 
 The workflow is implemented in **Nextflow DSL2** and runs on **SLURM HPC**. All four omics branches are executed in parallel within a single `nextflow run` invocation.
