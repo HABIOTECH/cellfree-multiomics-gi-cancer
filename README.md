@@ -116,11 +116,11 @@ Supporting modules: `main_downstream.nf` · `main_spikein.nf` · `main_smallrna.
 
 ### Quality Control Results
 
-![STAR Summary Statistics](docs/images/upstream/star_summary_table.png)
+![STAR Summary Statistics](docs/star_summary_table%20.png)
 
-![General Statistics](docs/images/upstream/general_stats_table.png)
+![General Statistics](docs/general_stats_table%20.png)
 
-![Picard Insert Size Distribution](docs/images/upstream/picard_insert_size.png)
+![Picard Insert Size Distribution](docs/picard_insert_size%20.png)
 
 ---
 
