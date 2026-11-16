@@ -1,7 +1,7 @@
 # Cell-Free Multi-Omics Analysis in Gastrointestinal Cancer
 
 <p align="center">
-  <img src="docs/images/upstream/CRC_STAD_NC_MultiOmics_Graphical_Abstract.svg" alt="CRC-STAD-NC Multi-Omics Workflow" width="100%">
+  <img src="results/CRC_STAD_NC_MultiOmics_Graphical_Abstract.svg" alt="CRC-STAD-NC Multi-Omics Workflow" width="100%">
 </p>
 
 An automated, HPC-ready Nextflow DSL2 workflow designed for high-throughput, multi-modal liquid biopsy deconvolution. Serving as a scalable, transparent reproduction of 
