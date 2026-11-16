@@ -1,0 +1,46 @@
+# Nextflow work directory and cache
+work/
+.nextflow/
+.nextflow.log*
+*.nextflow.log
+
+# Nextflow tower cache
+tower.yml
+
+# SLURM logs
+slurm-*.out
+slurm-*.err
+*.log
+
+# Large data outputs (do not commit processed files)
+results/
+output/
+bam/
+fastq/
+*.bam
+*.bai
+*.fastq.gz
+*.fq.gz
+*.sra
+
+# Conda environments (built locally)
+envs/.conda/
+*.lock
+
+# Sample sheets with actual paths (use .example files)
+sample_sheets/*.csv
+!sample_sheets/*.example.csv
+
+# macOS
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
