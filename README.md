@@ -40,6 +40,19 @@ The specific objectives are to:
   
 ---
 
+## Why Multi-Omics Integration?
+
+Cancer involves interconnected genomic, epigenetic, and transcriptomic alterations. Analyzing these molecular layers together may provide a more comprehensive view of cancer biology than examining each layer independently.
+
+This project integrates selected features from three core layers:
+- **cfWGS:** Copy-number variations (CNVs).
+- **cfMeDIP-seq:** DNA methylation patterns.
+- **Total cfRNA-seq:** Gene-expression profiles.
+
+Combining these complementary features may reveal cross-omics relationships and biologically relevant cancer-associated patterns. Fragmentomic and miRNA features are investigated separately to provide additional molecular insights.
+
+---
+
 ## Study Design
 
 | Parameter | Details |
