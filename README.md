@@ -143,11 +143,9 @@ The following results summarize post-alignment BAM processing and quality contro
 
 #### 1. Overall BAM QC Summary
 
-General overview of the processed BAM files and their alignment statistics.
+General overview of the processed BAM files.
 
 ![General Statistics](results/bam_processing_qc/General%20Statistics.jpeg)
-
-![Alignment Statistics](results/bam_processing_qc/Alignment%20ststs.jpeg)
 
 #### 2. Picard – BAM Quality Control
 
@@ -177,7 +175,9 @@ Reference-contig-level mapping summaries, including mapped reads per contig and 
 
 #### 5. Samtools Stats
 
-Additional alignment metrics and insert-size distribution summaries obtained from Samtools.
+Additional alignment metrics, alignment score statistics, and insert-size distribution summaries obtained from Samtools.
+
+![Alignment Statistics](results/bam_processing_qc/Alignment%20ststs.jpeg)
 
 ![Samtools Alignment Statistics](results/bam_processing_qc/Samtools_stats.jpeg)
 
