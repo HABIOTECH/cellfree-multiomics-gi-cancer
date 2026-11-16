@@ -281,7 +281,7 @@ This project was conducted by **Dr. Hesham Abdullah** and **Noura Khaled**, and 
 **Dr. Hesham Abdullah**
 - Email: `ceo@horizon-sci-comm.us and horizonsc.us@gmail.com`
 - GitHub: [@HABIOTECH](https://github.com/HABIOTECH)
-- LinkedIn: [Dr. Hesham Abdullah](https://www.linkedin.com/in/hesham-abdullah-40bab1190/)
+- LinkedIn: [Hesham Abdullah](https://www.linkedin.com/in/hesham-abdullah-40bab1190/)
 
 **Noura Khaled**
 - Email: `nourakhaledhussien@gmail.com`
