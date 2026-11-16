@@ -12,6 +12,34 @@ A production-grade Nextflow DSL2 pipeline reproducing the computational analyses
 
 ---
 
+## Project Background
+
+Gastrointestinal (GI) cancers, including colorectal cancer (CRC) and stomach adenocarcinoma (STAD), represent major challenges in cancer detection and molecular characterization. Identifying reliable molecular features in blood samples may support the development of less invasive approaches for cancer research and biomarker discovery.
+
+Cell-free DNA (cfDNA) and cell-free RNA (cfRNA) circulating in blood can carry molecular information associated with underlying biological and disease processes. However, individual molecular layers capture different aspects of cancer biology and may provide complementary information.
+
+This project investigates a cell-free multi-omics approach by analyzing publicly available sequencing datasets across colorectal cancer, stomach adenocarcinoma, and healthy donor groups. The study incorporates whole-genome sequencing of cfDNA (cfWGS), methylated cfDNA profiling (cfMeDIP-seq), total cfRNA sequencing, and small cfRNA sequencing for miRNA profiling.
+
+By characterizing these molecular layers, the project aims to investigate cancer-associated genomic, epigenetic, and transcriptomic patterns and explore their potential biological relevance.
+
+---
+
+## Project Objectives
+
+The main objective of this project is to characterize cell-free molecular profiles across colorectal cancer, stomach adenocarcinoma, and healthy donor groups using a multi-omics bioinformatics workflow.
+
+The specific objectives are to:
+
+- Characterize cfDNA genomic alterations, with a focus on copy-number variation (CNV) features.
+- Investigate complementary cfDNA fragmentomic features, including end-motif patterns and fragment-size profiles.
+- Profile DNA methylation patterns using cfMeDIP-seq data.
+- Quantify gene expression from total cfRNA-seq data and investigate relevant RNA features.
+- Characterize small cfRNA-derived miRNA profiles and explore their biological relevance.
+- Integrate selected genomic, methylation, and gene-expression features to investigate cross-omics relationships and biologically relevant pathways.
+- Explore molecular signatures that may support future biomarker discovery in gastrointestinal cancers.
+  
+---
+
 ## Study Design
 
 | Parameter | Details |
