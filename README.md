@@ -114,7 +114,13 @@ Supporting modules: `main_downstream.nf` · `main_spikein.nf` · `main_smallrna.
 
 ## Results Showcase
 
-Selected outputs from pipeline execution, quality control, and omics-level analyses.
+### Upstream Quality Control
+
+![STAR Summary Table](docs/images/upstream/star_summary_table.png)
+
+![General Statistics Table](docs/images/upstream/general_stats_table.png)
+
+![Picard Insert Size Distribution](docs/images/downstream/picard_insert_size.png)
 
 ---
 
