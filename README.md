@@ -9,9 +9,6 @@ A production-grade Nextflow DSL2 pipeline reproducing the computational analyses
 
 ---
 
-## Reference
-
-> Tao Y, Xing S, Zuo S, et al. **Cell-free multi-omics analysis reveals potential biomarkers in gastrointestinal cancer patients' blood.** *Cell Reports Medicine* 2023;4:101281. DOI: [10.1016/j.xcrm.2023.101281](https://doi.org/10.1016/j.xcrm.2023.101281)
 
 ---
 
@@ -246,6 +243,10 @@ If you use this pipeline or its outputs, please cite the original study:
 PI: **Hesham M. Abdullah, Ph.D.**
 
 ---
+
+## Reference
+
+> Tao Y, Xing S, Zuo S, et al. **Cell-free multi-omics analysis reveals potential biomarkers in gastrointestinal cancer patients' blood.** *Cell Reports Medicine* 2023;4:101281. DOI: [10.1016/j.xcrm.2023.101281](https://doi.org/10.1016/j.xcrm.2023.101281)
 
 ## License
 
